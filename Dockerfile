@@ -1,4 +1,4 @@
 FROM docker:19.03.6-dind
 
-RUN apk add --no-cache openssl-dev libffi-dev gcc py-pip gettext
+RUN apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make gettext
 RUN pip install docker-compose awscli
